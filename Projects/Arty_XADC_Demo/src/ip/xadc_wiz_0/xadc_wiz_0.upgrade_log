@@ -1,0 +1,16 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:24:04 MST 2014
+| Date         : Thu Feb 12 18:26:49 2015
+| Host         : WK86 running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'xadc_wiz_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of xadc_wiz_0 (xilinx.com:ip:xadc_wiz:3.0) from (Rev. 4) to (Rev. 6)
+
