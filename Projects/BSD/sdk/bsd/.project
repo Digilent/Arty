@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>bsd</name>
-	<comment>Created by SDK v2015.3. bsd_bsp - microblaze_0</comment>
+	<comment>Created by SDK v2015.4. bsd_bsp - microblaze_0</comment>
 	<projects>
 		<project>bsd_bsp</project>
 	</projects>

@@ -10,7 +10,7 @@
 ################################################################
 # Check if script is running in correct Vivado version.
 ################################################################
-set scripts_vivado_version 2015.3
+set scripts_vivado_version 2015.4
 set current_vivado_version [version -short]
 
 if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
@@ -713,17 +713,17 @@ CONFIG.XADC_STARUP_SELECTION {channel_sequencer} \
   connect_bd_net -net clk_wiz_1_clk_out4 [get_bd_ports eth_ref_clk] [get_bd_pins clk_wiz_1/clk_out4]
   connect_bd_net -net clk_wiz_1_locked [get_bd_pins clk_wiz_1/locked] [get_bd_pins rst_clk_wiz_1_100M/dcm_locked]
   connect_bd_net -net mdm_1_debug_sys_rst [get_bd_pins mdm_1/Debug_SYS_Rst] [get_bd_pins rst_clk_wiz_1_100M/mb_debug_sys_rst]
-  connect_bd_net -net microblaze_0_Clk [get_bd_pins axi_ethernetlite_0/s_axi_aclk] [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_gpio_1/s_axi_aclk] [get_bd_pins axi_gpio_led/s_axi_aclk] [get_bd_pins axi_gpio_pullup/s_axi_aclk] [get_bd_pins axi_gpio_sw/s_axi_aclk] [get_bd_pins axi_iic_0/s_axi_aclk] [get_bd_pins axi_mem_intercon/ACLK] [get_bd_pins axi_mem_intercon/S00_ACLK] [get_bd_pins axi_mem_intercon/S01_ACLK] [get_bd_pins axi_quad_spi_flash/ext_spi_clk] [get_bd_pins axi_quad_spi_flash/s_axi_aclk] [get_bd_pins axi_quad_spi_shield/ext_spi_clk] [get_bd_pins axi_quad_spi_shield/s_axi_aclk] [get_bd_pins axi_timer_0/s_axi_aclk] [get_bd_pins axi_uartlite_0/s_axi_aclk] [get_bd_pins clk_wiz_1/clk_out1] [get_bd_pins microblaze_0/Clk] [get_bd_pins microblaze_0_axi_intc/processor_clk] [get_bd_pins microblaze_0_axi_intc/s_axi_aclk] [get_bd_pins microblaze_0_axi_periph/ACLK] [get_bd_pins microblaze_0_axi_periph/M00_ACLK] [get_bd_pins microblaze_0_axi_periph/M01_ACLK] [get_bd_pins microblaze_0_axi_periph/M02_ACLK] [get_bd_pins microblaze_0_axi_periph/M03_ACLK] [get_bd_pins microblaze_0_axi_periph/M04_ACLK] [get_bd_pins microblaze_0_axi_periph/M05_ACLK] [get_bd_pins microblaze_0_axi_periph/M06_ACLK] [get_bd_pins microblaze_0_axi_periph/M07_ACLK] [get_bd_pins microblaze_0_axi_periph/M08_ACLK] [get_bd_pins microblaze_0_axi_periph/M09_ACLK] [get_bd_pins microblaze_0_axi_periph/M10_ACLK] [get_bd_pins microblaze_0_axi_periph/M11_ACLK] [get_bd_pins microblaze_0_axi_periph/M12_ACLK] [get_bd_pins microblaze_0_axi_periph/M13_ACLK] [get_bd_pins microblaze_0_axi_periph/S00_ACLK] [get_bd_pins microblaze_0_local_memory/LMB_Clk] [get_bd_pins rst_clk_wiz_1_100M/slowest_sync_clk] [get_bd_pins xadc_wiz_0/s_axi_aclk]
+  connect_bd_net -net microblaze_0_Clk [get_bd_pins axi_ethernetlite_0/s_axi_aclk] [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_gpio_1/s_axi_aclk] [get_bd_pins axi_gpio_led/s_axi_aclk] [get_bd_pins axi_gpio_pullup/s_axi_aclk] [get_bd_pins axi_gpio_sw/s_axi_aclk] [get_bd_pins axi_iic_0/s_axi_aclk] [get_bd_pins axi_mem_intercon/ACLK] [get_bd_pins axi_mem_intercon/S00_ACLK] [get_bd_pins axi_mem_intercon/S01_ACLK] [get_bd_pins axi_quad_spi_flash/ext_spi_clk] [get_bd_pins axi_quad_spi_flash/s_axi_aclk] [get_bd_pins axi_quad_spi_shield/ext_spi_clk] [get_bd_pins axi_quad_spi_shield/s_axi_aclk] [get_bd_pins axi_timer_0/s_axi_aclk] [get_bd_pins axi_uartlite_0/s_axi_aclk] [get_bd_pins clk_wiz_1/clk_out1] [get_bd_pins microblaze_0/Clk] [get_bd_pins microblaze_0_axi_intc/processor_clk] [get_bd_pins microblaze_0_axi_intc/s_axi_aclk] [get_bd_pins microblaze_0_axi_periph/ACLK] [get_bd_pins microblaze_0_axi_periph/M00_ACLK] [get_bd_pins microblaze_0_axi_periph/M01_ACLK] [get_bd_pins microblaze_0_axi_periph/M02_ACLK] [get_bd_pins microblaze_0_axi_periph/M03_ACLK] [get_bd_pins microblaze_0_axi_periph/M04_ACLK] [get_bd_pins microblaze_0_axi_periph/M05_ACLK] [get_bd_pins microblaze_0_axi_periph/M06_ACLK] [get_bd_pins microblaze_0_axi_periph/M07_ACLK] [get_bd_pins microblaze_0_axi_periph/M08_ACLK] [get_bd_pins microblaze_0_axi_periph/M09_ACLK] [get_bd_pins microblaze_0_axi_periph/M10_ACLK] [get_bd_pins microblaze_0_axi_periph/M11_ACLK] [get_bd_pins microblaze_0_axi_periph/M12_ACLK] [get_bd_pins microblaze_0_axi_periph/S00_ACLK] [get_bd_pins microblaze_0_local_memory/LMB_Clk] [get_bd_pins rst_clk_wiz_1_100M/slowest_sync_clk]
   connect_bd_net -net microblaze_0_intr [get_bd_pins microblaze_0_axi_intc/intr] [get_bd_pins microblaze_0_xlconcat/dout]
   connect_bd_net -net mig_7series_0_mmcm_locked [get_bd_pins mig_7series_0/mmcm_locked] [get_bd_pins rst_mig_7series_0_83M/dcm_locked]
-  connect_bd_net -net mig_7series_0_ui_clk [get_bd_pins axi_mem_intercon/M00_ACLK] [get_bd_pins mig_7series_0/ui_clk] [get_bd_pins rst_mig_7series_0_83M/slowest_sync_clk]
+  connect_bd_net -net mig_7series_0_ui_clk [get_bd_pins axi_mem_intercon/M00_ACLK] [get_bd_pins microblaze_0_axi_periph/M13_ACLK] [get_bd_pins mig_7series_0/ui_clk] [get_bd_pins rst_mig_7series_0_83M/slowest_sync_clk] [get_bd_pins xadc_wiz_0/s_axi_aclk]
   connect_bd_net -net mig_7series_0_ui_clk_sync_rst [get_bd_pins mig_7series_0/ui_clk_sync_rst] [get_bd_pins rst_mig_7series_0_83M/ext_reset_in]
   connect_bd_net -net reset_1 [get_bd_ports reset] [get_bd_pins clk_wiz_1/resetn] [get_bd_pins mig_7series_0/sys_rst] [get_bd_pins rst_clk_wiz_1_100M/ext_reset_in]
   connect_bd_net -net rst_clk_wiz_1_100M_bus_struct_reset [get_bd_pins microblaze_0_local_memory/SYS_Rst] [get_bd_pins rst_clk_wiz_1_100M/bus_struct_reset]
   connect_bd_net -net rst_clk_wiz_1_100M_interconnect_aresetn [get_bd_pins axi_mem_intercon/ARESETN] [get_bd_pins microblaze_0_axi_periph/ARESETN] [get_bd_pins rst_clk_wiz_1_100M/interconnect_aresetn]
   connect_bd_net -net rst_clk_wiz_1_100M_mb_reset [get_bd_pins microblaze_0/Reset] [get_bd_pins microblaze_0_axi_intc/processor_rst] [get_bd_pins rst_clk_wiz_1_100M/mb_reset]
-  connect_bd_net -net rst_clk_wiz_1_100M_peripheral_aresetn [get_bd_pins axi_ethernetlite_0/s_axi_aresetn] [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins axi_gpio_1/s_axi_aresetn] [get_bd_pins axi_gpio_led/s_axi_aresetn] [get_bd_pins axi_gpio_pullup/s_axi_aresetn] [get_bd_pins axi_gpio_sw/s_axi_aresetn] [get_bd_pins axi_iic_0/s_axi_aresetn] [get_bd_pins axi_mem_intercon/S00_ARESETN] [get_bd_pins axi_mem_intercon/S01_ARESETN] [get_bd_pins axi_quad_spi_flash/s_axi_aresetn] [get_bd_pins axi_quad_spi_shield/s_axi_aresetn] [get_bd_pins axi_timer_0/s_axi_aresetn] [get_bd_pins axi_uartlite_0/s_axi_aresetn] [get_bd_pins microblaze_0_axi_intc/s_axi_aresetn] [get_bd_pins microblaze_0_axi_periph/M00_ARESETN] [get_bd_pins microblaze_0_axi_periph/M01_ARESETN] [get_bd_pins microblaze_0_axi_periph/M02_ARESETN] [get_bd_pins microblaze_0_axi_periph/M03_ARESETN] [get_bd_pins microblaze_0_axi_periph/M04_ARESETN] [get_bd_pins microblaze_0_axi_periph/M05_ARESETN] [get_bd_pins microblaze_0_axi_periph/M06_ARESETN] [get_bd_pins microblaze_0_axi_periph/M07_ARESETN] [get_bd_pins microblaze_0_axi_periph/M08_ARESETN] [get_bd_pins microblaze_0_axi_periph/M09_ARESETN] [get_bd_pins microblaze_0_axi_periph/M10_ARESETN] [get_bd_pins microblaze_0_axi_periph/M11_ARESETN] [get_bd_pins microblaze_0_axi_periph/M12_ARESETN] [get_bd_pins microblaze_0_axi_periph/M13_ARESETN] [get_bd_pins microblaze_0_axi_periph/S00_ARESETN] [get_bd_pins rst_clk_wiz_1_100M/peripheral_aresetn] [get_bd_pins xadc_wiz_0/s_axi_aresetn]
-  connect_bd_net -net rst_mig_7series_0_83M_peripheral_aresetn [get_bd_pins axi_mem_intercon/M00_ARESETN] [get_bd_pins mig_7series_0/aresetn] [get_bd_pins rst_mig_7series_0_83M/peripheral_aresetn]
+  connect_bd_net -net rst_clk_wiz_1_100M_peripheral_aresetn [get_bd_pins axi_ethernetlite_0/s_axi_aresetn] [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins axi_gpio_1/s_axi_aresetn] [get_bd_pins axi_gpio_led/s_axi_aresetn] [get_bd_pins axi_gpio_pullup/s_axi_aresetn] [get_bd_pins axi_gpio_sw/s_axi_aresetn] [get_bd_pins axi_iic_0/s_axi_aresetn] [get_bd_pins axi_mem_intercon/S00_ARESETN] [get_bd_pins axi_mem_intercon/S01_ARESETN] [get_bd_pins axi_quad_spi_flash/s_axi_aresetn] [get_bd_pins axi_quad_spi_shield/s_axi_aresetn] [get_bd_pins axi_timer_0/s_axi_aresetn] [get_bd_pins axi_uartlite_0/s_axi_aresetn] [get_bd_pins microblaze_0_axi_intc/s_axi_aresetn] [get_bd_pins microblaze_0_axi_periph/M00_ARESETN] [get_bd_pins microblaze_0_axi_periph/M01_ARESETN] [get_bd_pins microblaze_0_axi_periph/M02_ARESETN] [get_bd_pins microblaze_0_axi_periph/M03_ARESETN] [get_bd_pins microblaze_0_axi_periph/M04_ARESETN] [get_bd_pins microblaze_0_axi_periph/M05_ARESETN] [get_bd_pins microblaze_0_axi_periph/M06_ARESETN] [get_bd_pins microblaze_0_axi_periph/M07_ARESETN] [get_bd_pins microblaze_0_axi_periph/M08_ARESETN] [get_bd_pins microblaze_0_axi_periph/M09_ARESETN] [get_bd_pins microblaze_0_axi_periph/M10_ARESETN] [get_bd_pins microblaze_0_axi_periph/M11_ARESETN] [get_bd_pins microblaze_0_axi_periph/M12_ARESETN] [get_bd_pins microblaze_0_axi_periph/S00_ARESETN] [get_bd_pins rst_clk_wiz_1_100M/peripheral_aresetn]
+  connect_bd_net -net rst_mig_7series_0_83M_peripheral_aresetn [get_bd_pins axi_mem_intercon/M00_ARESETN] [get_bd_pins microblaze_0_axi_periph/M13_ARESETN] [get_bd_pins mig_7series_0/aresetn] [get_bd_pins rst_mig_7series_0_83M/peripheral_aresetn] [get_bd_pins xadc_wiz_0/s_axi_aresetn]
   connect_bd_net -net sys_clock_1 [get_bd_ports sys_clock] [get_bd_pins clk_wiz_1/clk_in1]
   connect_bd_net -net xadc_wiz_0_ip2intc_irpt [get_bd_pins microblaze_0_xlconcat/In6] [get_bd_pins xadc_wiz_0/ip2intc_irpt]
   connect_bd_net -net xadc_wiz_0_temp_out [get_bd_pins mig_7series_0/device_temp_i] [get_bd_pins xadc_wiz_0/temp_out]
@@ -782,104 +782,104 @@ preplace port Vaux15 -pg 1 -y 260 -defaultsOSRD
 preplace port reset -pg 1 -y 300 -defaultsOSRD
 preplace port dip_switches_4bits -pg 1 -y 280 -defaultsOSRD
 preplace port Vaux9 -pg 1 -y 160 -defaultsOSRD
-preplace inst rst_mig_7series_0_83M -pg 1 -lvl 1 -y 80 -defaultsOSRD
-preplace inst axi_iic_0 -pg 1 -lvl 4 -y 1210 -defaultsOSRD
-preplace inst mig_7series_0 -pg 1 -lvl 1 -y 1090 -defaultsOSRD
-preplace inst xadc_wiz_0 -pg 1 -lvl 1 -y 480 -defaultsOSRD
-preplace inst axi_gpio_sw -pg 1 -lvl 4 -y 440 -defaultsOSRD
-preplace inst microblaze_0_axi_periph -pg 1 -lvl 2 -y 330 -defaultsOSRD
-preplace inst microblaze_0_xlconcat -pg 1 -lvl 2 -y 1120 -defaultsOSRD
-preplace inst axi_timer_0 -pg 1 -lvl 3 -y 100 -defaultsOSRD
-preplace inst axi_gpio_led -pg 1 -lvl 3 -y -50 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 4 -y 560 -defaultsOSRD
-preplace inst axi_gpio_1 -pg 1 -lvl 4 -y 680 -defaultsOSRD
-preplace inst microblaze_0_axi_intc -pg 1 -lvl 3 -y 1170 -defaultsOSRD
-preplace inst mdm_1 -pg 1 -lvl 3 -y 770 -defaultsOSRD
-preplace inst axi_quad_spi_flash -pg 1 -lvl 4 -y 1380 -defaultsOSRD
-preplace inst axi_ethernetlite_0 -pg 1 -lvl 4 -y 40 -defaultsOSRD
-preplace inst axi_gpio_pullup -pg 1 -lvl 4 -y 300 -defaultsOSRD
-preplace inst microblaze_0 -pg 1 -lvl 3 -y 900 -defaultsOSRD
-preplace inst axi_uartlite_0 -pg 1 -lvl 3 -y 640 -defaultsOSRD
-preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 2 -y 1540 -defaultsOSRD
-preplace inst axi_quad_spi_shield -pg 1 -lvl 3 -y 260 -defaultsOSRD
-preplace inst microblaze_0_local_memory -pg 1 -lvl 2 -y 880 -defaultsOSRD
-preplace inst clk_wiz_1 -pg 1 -lvl 3 -y 460 -defaultsOSRD
-preplace inst axi_mem_intercon -pg 1 -lvl 4 -y 900 -defaultsOSRD
-preplace netloc microblaze_0_axi_periph_M02_AXI 1 2 1 950
-preplace netloc axi_gpio_2_GPIO 1 3 2 NJ -80 NJ
-preplace netloc Vaux5_1 1 0 1 -40
-preplace netloc mig_7series_0_DDR3 1 1 4 450 1010 NJ 1010 NJ -40 NJ
-preplace netloc axi_timer_0_interrupt 1 1 3 570 1000 NJ 1020 1780
-preplace netloc xadc_wiz_0_temp_out 1 0 2 50 730 390
-preplace netloc microblaze_0_axi_periph_M03_AXI 1 2 1 1080
-preplace netloc axi_gpio_pullup_GPIO 1 4 1 2250
-preplace netloc axi_quad_spi_0_SPI_0 1 3 2 1850 230 NJ
-preplace netloc microblaze_0_axi_periph_M01_AXI 1 2 2 NJ 340 NJ
-preplace netloc axi_gpio_sw_GPIO2 1 4 1 NJ
-preplace netloc sys_clock_1 1 0 3 NJ 720 NJ 720 1000
-preplace netloc axi_iic_0_IIC 1 4 1 2280
-preplace netloc microblaze_0_intc_axi 1 2 1 1020
-preplace netloc microblaze_0_dlmb_1 1 1 3 480 1280 NJ 1280 1750
-preplace netloc microblaze_0_M_AXI_IC 1 3 1 1890
-preplace netloc axi_ethernetlite_0_ip2intc_irpt 1 1 4 510 730 NJ 560 NJ -50 2250
-preplace netloc rst_clk_wiz_1_100M_mb_reset 1 2 1 1070
-preplace netloc mig_7series_0_mmcm_locked 1 0 2 30 740 390
-preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 1 2 560 1230 910
-preplace netloc axi_gpio_0_GPIO2 1 4 1 2290
-preplace netloc axi_quad_spi_shield_ip2intc_irpt 1 1 3 550 1320 NJ 1320 1810
-preplace netloc mig_7series_0_ui_clk_sync_rst 1 0 2 30 -10 400
-preplace netloc Vaux12_1 1 0 1 -100
-preplace netloc microblaze_0_ilmb_1 1 1 3 490 1290 NJ 1290 1740
-preplace netloc microblaze_0_axi_periph_M12_AXI 1 2 2 NJ 570 1890
-preplace netloc microblaze_0_axi_periph_M08_AXI 1 2 1 920
-preplace netloc microblaze_0_interrupt 1 2 2 1080 1070 1720
-preplace netloc Vaux15_1 1 0 1 -130
-preplace netloc mdm_1_debug_sys_rst 1 1 3 570 1390 NJ 1390 1790
-preplace netloc axi_iic_0_iic2intc_irpt 1 1 4 530 1300 NJ 1300 NJ 1280 2260
-preplace netloc microblaze_0_axi_periph_M13_AXI 1 0 3 20 -50 NJ -50 910
-preplace netloc axi_quad_spi_flash_ip2intc_irpt 1 1 4 540 1310 NJ 1310 NJ 1300 2260
-preplace netloc axi_uartlite_0_UART 1 3 2 NJ 210 2270
-preplace netloc Vaux13_1 1 0 1 -110
-preplace netloc Vaux7_1 1 0 1 -60
-preplace netloc microblaze_0_Clk 1 0 4 40 700 460 760 1040 1330 1900
-preplace netloc axi_quad_spi_1_SPI_0 1 4 1 2310
-preplace netloc rst_mig_7series_0_83M_peripheral_aresetn 1 0 4 30 790 420 790 NJ 1050 NJ
-preplace netloc axi_gpio_1_GPIO1 1 4 1 2320
-preplace netloc Vaux2_1 1 0 1 -20
-preplace netloc Vp_Vn_1 1 0 1 -70
-preplace netloc axi_ethernetlite_0_MDIO 1 4 1 2280
-preplace netloc axi_ethernetlite_0_MII 1 4 1 2260
-preplace netloc Vaux0_1 1 0 1 0
-preplace netloc microblaze_0_axi_periph_M11_AXI 1 2 2 NJ 550 1890
-preplace netloc clk_wiz_1_locked 1 1 3 560 1380 NJ 1380 1800
-preplace netloc microblaze_0_debug 1 2 2 1090 990 1730
-preplace netloc microblaze_0_axi_periph_M09_AXI 1 2 2 NJ 360 NJ
-preplace netloc microblaze_0_axi_dp 1 1 3 500 970 NJ 1000 1720
-preplace netloc rst_clk_wiz_1_100M_interconnect_aresetn 1 1 3 470 1340 1040 1340 NJ
-preplace netloc xadc_wiz_0_ip2intc_irpt 1 1 1 430
-preplace netloc clk_wiz_1_clk_out2 1 0 4 20 780 NJ 780 NJ 1030 1770
-preplace netloc microblaze_0_axi_periph_M06_AXI 1 2 2 NJ 1270 NJ
-preplace netloc Vaux6_1 1 0 1 -50
-preplace netloc clk_wiz_1_clk_out3 1 0 4 60 990 NJ 990 NJ 1040 1760
-preplace netloc Vaux14_1 1 0 1 -120
-preplace netloc clk_wiz_1_clk_out4 1 3 2 1840 -30 NJ
-preplace netloc Vaux4_1 1 0 1 -30
-preplace netloc mig_7series_0_ui_clk 1 0 4 10 970 NJ 980 NJ 1060 NJ
-preplace netloc microblaze_0_axi_periph_M04_AXI 1 2 1 960
-preplace netloc Vaux10_1 1 0 1 -90
-preplace netloc axi_gpio_2_GPIO2 1 3 2 NJ -60 NJ
-preplace netloc microblaze_0_axi_periph_M07_AXI 1 2 2 NJ 350 NJ
-preplace netloc axi_gpio_sw_GPIO 1 4 1 NJ
-preplace netloc Vaux1_1 1 0 1 -10
-preplace netloc microblaze_0_M_AXI_DC 1 3 1 1880
-preplace netloc axi_mem_intercon_M00_AXI 1 0 5 40 710 NJ 710 NJ 710 NJ 750 2250
-preplace netloc Vaux9_1 1 0 1 -80
-preplace netloc microblaze_0_intr 1 2 1 910
-preplace netloc reset_1 1 0 3 -140 750 440 750 NJ
-preplace netloc microblaze_0_axi_periph_M05_AXI 1 2 2 NJ 1350 NJ
-preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 0 4 50 690 410 -60 990 1400 1920
-preplace netloc axi_gpio_sw_ip2intc_irpt 1 1 4 520 740 NJ 370 NJ 370 2260
-levelinfo -pg 1 -170 230 750 1500 2120 2370 -top -120 -bot 1630
+preplace inst rst_mig_7series_0_83M -pg 1 -lvl 1 -y 180 -defaultsOSRD
+preplace inst axi_iic_0 -pg 1 -lvl 5 -y 1210 -defaultsOSRD
+preplace inst mig_7series_0 -pg 1 -lvl 1 -y 1150 -defaultsOSRD
+preplace inst axi_gpio_sw -pg 1 -lvl 5 -y 440 -defaultsOSRD
+preplace inst xadc_wiz_0 -pg 1 -lvl 1 -y 770 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 2 -y 420 -defaultsOSRD
+preplace inst axi_gpio_led -pg 1 -lvl 4 -y -50 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 5 -y 560 -defaultsOSRD
+preplace inst microblaze_0_xlconcat -pg 1 -lvl 3 -y 1120 -defaultsOSRD
+preplace inst axi_timer_0 -pg 1 -lvl 4 -y 100 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 5 -y 680 -defaultsOSRD
+preplace inst axi_quad_spi_flash -pg 1 -lvl 5 -y 1380 -defaultsOSRD
+preplace inst axi_ethernetlite_0 -pg 1 -lvl 5 -y 40 -defaultsOSRD
+preplace inst microblaze_0_axi_intc -pg 1 -lvl 4 -y 1170 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 4 -y 770 -defaultsOSRD
+preplace inst axi_gpio_pullup -pg 1 -lvl 5 -y 300 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 4 -y 900 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 4 -y 640 -defaultsOSRD
+preplace inst axi_quad_spi_shield -pg 1 -lvl 4 -y 260 -defaultsOSRD
+preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 3 -y 1540 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 4 -y 460 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 5 -y 900 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 3 -y 880 -defaultsOSRD
+preplace netloc axi_gpio_2_GPIO 1 4 2 NJ -80 NJ
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 2 2 420 50 N
+preplace netloc Vaux5_1 1 0 1 -390
+preplace netloc mig_7series_0_DDR3 1 1 5 70 1000 NJ 1000 NJ 1000 NJ -40 NJ
+preplace netloc axi_timer_0_interrupt 1 2 3 NJ 980 NJ 1030 1800
+preplace netloc xadc_wiz_0_temp_out 1 0 2 -310 1000 10
+preplace netloc axi_quad_spi_0_SPI_0 1 4 2 1830 230 NJ
+preplace netloc axi_gpio_pullup_GPIO 1 5 1 2270
+preplace netloc microblaze_0_axi_periph_M03_AXI 1 2 2 N 350 1180
+preplace netloc axi_gpio_sw_GPIO2 1 5 1 NJ
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 2 3 N 310 NJ 340 NJ
+preplace netloc sys_clock_1 1 0 4 NJ 0 NJ 0 N 0 1210
+preplace netloc axi_iic_0_IIC 1 5 1 2290
+preplace netloc microblaze_0_dlmb_1 1 2 3 NJ 1340 NJ 1340 1790
+preplace netloc microblaze_0_M_AXI_IC 1 4 1 1890
+preplace netloc microblaze_0_intc_axi 1 2 2 N 290 1120
+preplace netloc axi_ethernetlite_0_ip2intc_irpt 1 2 4 NJ 970 NJ 1050 NJ 1050 2260
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 3 1 1130
+preplace netloc mig_7series_0_mmcm_locked 1 0 2 -310 270 30
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 2 2 520 1360 1060
+preplace netloc axi_gpio_0_GPIO2 1 5 1 2300
+preplace netloc axi_quad_spi_shield_ip2intc_irpt 1 2 3 NJ 1010 NJ 1020 1750
+preplace netloc mig_7series_0_ui_clk_sync_rst 1 0 2 -320 280 20
+preplace netloc Vaux12_1 1 0 1 -460
+preplace netloc microblaze_0_axi_periph_M12_AXI 1 2 3 N 530 NJ 710 1890
+preplace netloc microblaze_0_ilmb_1 1 2 3 NJ 1350 NJ 1350 1780
+preplace netloc microblaze_0_axi_periph_M08_AXI 1 2 2 430 -70 N
+preplace netloc Vaux15_1 1 0 1 -490
+preplace netloc microblaze_0_interrupt 1 3 2 1170 1070 1720
+preplace netloc mdm_1_debug_sys_rst 1 2 3 NJ 1290 NJ 1290 1740
+preplace netloc axi_iic_0_iic2intc_irpt 1 2 4 NJ 1300 NJ 1300 NJ 1280 2250
+preplace netloc axi_quad_spi_flash_ip2intc_irpt 1 2 4 NJ 1310 NJ 1310 NJ 1300 2250
+preplace netloc microblaze_0_axi_periph_M13_AXI 1 0 3 -340 20 NJ 20 410
+preplace netloc axi_uartlite_0_UART 1 4 2 NJ 750 2350
+preplace netloc Vaux13_1 1 0 1 -470
+preplace netloc Vaux7_1 1 0 1 -410
+preplace netloc microblaze_0_Clk 1 1 4 100 10 470 10 1140 1360 1900
+preplace netloc axi_quad_spi_1_SPI_0 1 5 1 2330
+preplace netloc rst_mig_7series_0_83M_peripheral_aresetn 1 0 5 -330 980 40 810 NJ 780 NJ 1010 NJ
+preplace netloc axi_gpio_1_GPIO1 1 5 1 2320
+preplace netloc Vaux2_1 1 0 1 -370
+preplace netloc Vp_Vn_1 1 0 1 -420
+preplace netloc axi_ethernetlite_0_MDIO 1 5 1 2270
+preplace netloc axi_ethernetlite_0_MII 1 5 1 2260
+preplace netloc Vaux0_1 1 0 1 -350
+preplace netloc microblaze_0_axi_periph_M11_AXI 1 2 3 N 510 NJ 550 1870
+preplace netloc clk_wiz_1_locked 1 2 3 NJ 1280 NJ 1280 1760
+preplace netloc microblaze_0_axi_periph_M09_AXI 1 2 3 480 360 NJ 360 NJ
+preplace netloc microblaze_0_debug 1 3 2 1200 990 1720
+preplace netloc microblaze_0_axi_dp 1 1 4 80 1330 NJ 1330 NJ 1330 1730
+preplace netloc rst_clk_wiz_1_100M_interconnect_aresetn 1 1 4 90 1370 N 1370 1080 1370 NJ
+preplace netloc xadc_wiz_0_ip2intc_irpt 1 1 2 50 40 460
+preplace netloc clk_wiz_1_clk_out2 1 0 5 -310 1320 NJ 1320 NJ 1320 NJ 1320 1810
+preplace netloc microblaze_0_axi_periph_M06_AXI 1 2 3 N 410 NJ 570 NJ
+preplace netloc Vaux6_1 1 0 1 -400
+preplace netloc clk_wiz_1_clk_out3 1 0 5 -320 1270 NJ 1270 NJ 1270 NJ 1270 1770
+preplace netloc Vaux14_1 1 0 1 -480
+preplace netloc clk_wiz_1_clk_out4 1 4 2 1820 -30 NJ
+preplace netloc Vaux4_1 1 0 1 -380
+preplace netloc mig_7series_0_ui_clk 1 0 5 -330 560 NJ 800 NJ 790 NJ 1040 NJ
+preplace netloc microblaze_0_axi_periph_M04_AXI 1 2 2 440 230 N
+preplace netloc Vaux10_1 1 0 1 -450
+preplace netloc axi_gpio_2_GPIO2 1 4 2 NJ -60 NJ
+preplace netloc microblaze_0_axi_periph_M07_AXI 1 2 3 450 370 NJ 370 NJ
+preplace netloc axi_gpio_sw_GPIO 1 5 1 NJ
+preplace netloc Vaux1_1 1 0 1 -360
+preplace netloc microblaze_0_M_AXI_DC 1 4 1 1880
+preplace netloc axi_mem_intercon_M00_AXI 1 0 6 -320 990 NJ 990 NJ 990 NJ 1060 NJ 1060 2250
+preplace netloc Vaux9_1 1 0 1 -440
+preplace netloc microblaze_0_intr 1 3 1 1060
+preplace netloc reset_1 1 0 4 -500 1010 N 1010 NJ 470 NJ
+preplace netloc microblaze_0_axi_periph_M05_AXI 1 2 3 N 390 NJ 560 NJ
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 1 4 70 -10 N -10 1150 1380 1930
+preplace netloc axi_gpio_sw_ip2intc_irpt 1 2 4 NJ 340 NJ 350 NJ 370 2250
+levelinfo -pg 1 -520 -150 280 900 1500 2120 2390 -top -120 -bot 1630
 ",
 }
 
